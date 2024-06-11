@@ -1,0 +1,450 @@
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+.header {
+    position: static;
+    top: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 100px 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navigation a {
+    color: white;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+    flex: 1; /* Make sure links are evenly spaced */
+}
+
+.navigation a:hover {
+    background-color: crimson;
+    color: black;
+}
+
+/* Main */
+.main {
+    margin: 15px;
+}
+
+/* Highlighted Text */
+span {
+    color: crimson;
+}
+
+/* Images */
+img {
+    height: 200px;
+    width: 200px;
+}
+
+/* Home Section Specific Styles */
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-photo-container {
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #007BFF;
+}
+
+.welcome-message h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.welcome-message p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.tagline h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.cta {
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.skills-overview h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skills-overview p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.quick-links p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.quick-links a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+    color: #0056b3;
+}
+
+.social-media-links a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.social-media-links a:hover {
+    color: #0056b3;
+}
+
+/* Home, About, Portfolio, Contact Sections */
+.home-section, .about-section, .portfolio-section, .contact-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.home-section .container, .about-section .container, .portfolio-section .container, .contact-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-section h2, .about-section h2, .portfolio-section h2, .contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.home-content, .about-content, .portfolio-content, .contact-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-content .bio p, .about-content .bio p, .portfolio-content .bio p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.home-content h3, .about-content h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.home-content ul, .about-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.home-content li, .about-content li {
+    margin-bottom: 15px;
+}
+
+.home-content li h4, .about-content li h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.home-content li p, .about-content li p {
+    font-size: 16px;
+    color: #777;
+}
+
+.skills p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Portfolio Section */
+.portfolio-section .portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-section .project {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.portfolio-section .project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.portfolio-section .project h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.portfolio-section .project p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Contact Section */
+.contact-section .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.contact-links, .social-media-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-links h3, .social-media-links h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-link, .social-media-link {
+    display: inline-block;
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover, .social-media-link:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+ /*dark and light themes*/
+ /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.light-theme {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+/* Header */
+.header .body{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .header .body{
+    background-color: #f2f2f2;
+}
+
+.dark-theme .header {
+    background-color: #222;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.light-theme .navigation {
+    background-color: #333;
+}
+
+.dark-theme .navigation {
+    background-color: #444;
+}
+
+.navigation a {
+    color: white;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+    flex: 1; /* Make sure links are evenly spaced */
+}
+
+.light-theme .navigation a:hover {
+    background-color: crimson;
+    color: black;
+}
+
+.dark-theme .navigation a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Other section styles */
+/* Add similar theme-specific styles for other sections as needed */
+
+/* Footer */
+.footer {
+    padding: 10px;
+    text-align: center;
+}
+
+.light-theme .footer {
+    background-color: #f2f2f2;
+}
+
+.dark-theme .footer {
+    background-color: #222;
+}
+
+/* css for small screens */
+@media screens{
+    .header{
+        flex-direction:column;
+    }
+    .header img{
+        width: 100%
+    }
+    .header .nav{
+        flex-direction: column;
+    }
+    .header .nav a{
+        padding: 10%;
+    }
+
+}
